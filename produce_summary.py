@@ -12,8 +12,8 @@ def delivered_melons_report(day_number, delivery_filepath):
     :return: None
     """
 
-    print(day_number)                              # Prints day to output
-    the_file = open(delivery_filepath)    # Creates a file object to read from .txt file
+    print(day_number)                       # Prints day to output
+    the_file = open(delivery_filepath)      # Creates a file object to read from .txt file
     for line in the_file:                   # Repeats for each line read in the file object
         line = line.rstrip()                # Removes extra whitespace to the right of the end of the line
         words = line.split('|')             # Tokenizes the string of each line by the | delimiter, creating a list of the string elements
