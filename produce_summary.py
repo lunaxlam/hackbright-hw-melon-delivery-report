@@ -5,7 +5,7 @@ the quantity, description of item, and total delivery cost."""
 # A function declaration with two parameters
 def delivered_melons_report(day_number, delivery_filepath):
     """
-    Prints total count of melons, melon description, and delivery cost.
+    Print total count of melons, melon description, and delivery cost.
     
     :param day: day of delivery as a string
     :param deliveries_day_file: text file for delivery day as a string
@@ -23,7 +23,7 @@ def delivered_melons_report(day_number, delivery_filepath):
         amount = words[2]                   # Stores the element at index 2 as a variable for later use
 
         print(f"Delivered {count} {melon}s for total of ${amount}")     # Uses string-format to print the delivery message
-    the_file.close()                        # Closes the file 
+    the_file.close()                        # Closes the file object
 
 # Calls the function for Day 1 and wraps in a print statement to display in output
 print(delivered_melons_report("Day 1", "um-deliveries-day-1.txt"))
